@@ -18,7 +18,7 @@ def file_open():
     return loaded_model    
 
 
-@app.route('/predict',methods=['POST']) 
+@app.route('/predict',methods=['GET','POST']) 
 def prediction():
     """ 
     predict the house price that take the features and return the preicted price 
